@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(45deg, #ff5555 0%, #726aff 30%, #5cfb5e 66%, #f0ff58 90%);
+
+}
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+button {
+    border-radius: 100%;
+    height: 5em;
+    width: 5em;
+    font-size: .5em;
+    background-color: blue;
+    color: white;
+}
+.genius {
+    display: grid;
+    grid-template-areas: "agreen ared" "ayellow ablue";
+    gap: 3%;
+    border-radius: 100%;
+    height: 75vh;
+    width: 75vh;
+}
+@media screen and (max-width: 100vh) {
+    .genius{
+        height: 75vw;
+        width: 75vw;
+    }
+}
+.green {
+    grid-area: agreen;
+    background-color: green;
+    filter: brightness(50%);
+    filter: saturate(50%);
+    filter: sepia(50%);
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 25%;
+}
+.red {
+    grid-area: ared;
+    background-color: red;
+    filter: brightness(0%);
+    filter: saturate(50%);
+    filter: sepia(50%);
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 25%;
+}
+.blue {
+    grid-area: ablue;
+    background-color: blue;
+    filter: brightness(0%);
+    filter: saturate(50%);
+    filter: sepia(50%);
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 25%;
+}
+.yellow {
+    grid-area: ayellow;
+    background-color: yellow;
+    filter: brightness(0%);
+    filter: saturate(50%);
+    filter: sepia(50%);
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 25%;
+}
+.selected {
+    filter: brightness(100%);
+    filter: saturate(100%);
+    filter: sepia(0%);
+    transform: scale(1.05);
+    box-shadow: darkgray 0em 0em .2em .2em;
+}
+a:active  {
+    filter: brightness(100%);
+    filter: saturate(100%);
+    filter: sepia(0%);
+    transform: scale(1.05);
+    box-shadow: darkgray 0em 0em .2em .2em;
+}
