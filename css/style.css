@@ -3,26 +3,26 @@
     box-sizing: border-box;
 }
 body {
-    background-image: linear-gradient(45deg, #ff5555 0%, #726aff 30%, #5cfb5e 66%, #f0ff58 90%);
-
+    background: #000000c2;
 }
 main {
     display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
 button {
+    display: inherit;
+    align-items: center;
     border-radius: 100%;
-    height: 5em;
-    width: 5em;
+    height: 6vh;
+    width: 6vh;
     font-size: .5em;
     background-color: blue;
     color: white;
 }
 .genius {
-    display: grid;
+    display: inherit;
     grid-template-areas: "agreen ared" "ayellow ablue";
     gap: 3%;
     border-radius: 100%;
